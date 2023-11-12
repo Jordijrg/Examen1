@@ -12,7 +12,7 @@ include "../src/controllers/registre.php";
 include "../src/controllers/logout.php";
 include "../src/controllers/userpage.php";
 // include "../src/controllers/apartament_ajax.php";
-// include "../src/middleware/middleAdmin.php";
+ include "../src/middleware/middleAdmin.php";
 
 
 include "../src/Emeset/Container.php";
@@ -33,8 +33,10 @@ if ($r == "login") {
     ctrlLogin($request, $response, $container);
 } elseif ($r == "registre") {
     ctrlRegistre($request, $response, $container);
-}  else {
-    ctrlIndex($request, $response, $container,);
+}elseif ($r == "logout") 
+    ctrlLogout($request, $response, $container);  
+else {
+    getUserData($request, $response, $container, "ctrlIndex");
 }
 
 $response->response();
