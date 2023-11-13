@@ -11,8 +11,10 @@ include "../src/controllers/login.php";
 include "../src/controllers/registre.php";
 include "../src/controllers/logout.php";
 include "../src/controllers/userpage.php";
+include "../src/controllers/inscripcio.php";
+include "../src/controllers/verificaPasswd.php";
 // include "../src/controllers/apartament_ajax.php";
-// include "../src/middleware/middleAdmin.php";
+ include "../src/middleware/middleAdmin.php";
 
 
 include "../src/Emeset/Container.php";
@@ -29,12 +31,16 @@ if (isset($_REQUEST["r"])) {
 }
 
 
-if ($r == "login") {
-    ctrlLogin($request, $response, $container);
-} elseif ($r == "registre") {
+
+ if ($r == "registre") {
     ctrlRegistre($request, $response, $container);
-}  else {
-    ctrlIndex($request, $response, $container,);
+}elseif ($r == "inscripcio") {
+    ctrlInscripcio($request, $response, $container);
+}elseif ($r == "verificarPasswd") {
+    ctrlVerificarPasswd($request, $response, $container);
+}
+else {
+    getUserData($request, $response, $container, "ctrlIndex");
 }
 
 $response->response();

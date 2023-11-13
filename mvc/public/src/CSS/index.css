@@ -1,0 +1,31 @@
+.carousel-inner{
+    border-radius: 15px;
+}
+.btn-ins{
+    margin: auto;
+}
+.d-felx{
+    display: flex;
+}
+.btn-primary{
+    color: white;
+    background-color: brown;
+}
+.info{
+    text-align: center;
+}
+.m-top{
+    margin-top: 20px;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block !important;
+}
+.container{
+    margin-top: 25px;
+}
+.form-select{
+    width: 80px !important;
+}
