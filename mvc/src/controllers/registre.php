@@ -35,6 +35,16 @@ function ctrlRegistre($request, $response, $container)
                 if ($result) {
                     // Registration successful
                     echo "Registration successful!";
+                    $response->setTemplate("conf.php");
+                    echo "<br>";
+                    echo $name;
+                    echo "<br>";
+                    echo $surname;
+                    echo "<br>";
+                    echo $adreca;
+                    echo "<br>";
+                    echo $fechaFormateada;
+                    
                 } else {
                     // Registration failed
                     echo "Registration failed.";

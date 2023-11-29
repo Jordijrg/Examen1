@@ -53,7 +53,7 @@
                             <input type="file" class="form-control-file" id="file" name="file" required>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="button1">Submit</button>
+                            <a href="index.php?r=conf"><button type="submit" class="button1">Submit</button></a>
                         </div>
                     </form>
                 </div>
