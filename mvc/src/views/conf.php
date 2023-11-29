@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div>
+    <?php
+        echo "Nom: " . $nom . "<br>";
+        echo "Cognom: " . $cognom . "<br>";
+        echo "Adreça: " . $adreca . "<br>";
+        echo "Data de naixement: " . $data . "<br>";?>
+    </div>
 </body>
 </html>
